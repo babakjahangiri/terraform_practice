@@ -4,7 +4,7 @@ provider "aws" {
   // %USERPROFILE%.aws\credentials
 }
 
-resource "aws_vpc" "myVPC1" {
+resource "aws_vpc" "${var.vpcname}" {
   cidr_block = "192.168.0.0/24"
   tags = {
     "author" = "babak"

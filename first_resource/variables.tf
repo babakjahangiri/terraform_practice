@@ -20,7 +20,7 @@ variable "mylist" {
 variable "mymap" {
   type = map 
   default = {
-    Key1 = "value1"
-    Key2 = "value2"
+    Key1 = "Value1"
+    Key2 = "Value2"
   }
 }
