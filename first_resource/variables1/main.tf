@@ -12,3 +12,8 @@ variable "enabled" {
   default = true
 }
 
+variable "mylist" {
+  type = list(string)
+  default = ["value1,value2"]
+}
+
