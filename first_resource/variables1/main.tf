@@ -14,6 +14,13 @@ variable "enabled" {
 
 variable "mylist" {
   type = list(string)
-  default = ["value1,value2"]
+  default = ["value1","value2"]
 }
 
+variable "mymap" {
+  type = map 
+  default = {
+    Key1 = "value1"
+    Key2 = "value2"
+  }
+}
