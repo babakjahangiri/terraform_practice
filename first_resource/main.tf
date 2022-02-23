@@ -13,3 +13,7 @@ resource "aws_vpc" "vpc1" {
   }
 
 }
+
+output "vpcId" {
+  value = aws_vpc.vpc1.id
+}
