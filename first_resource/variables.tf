@@ -37,3 +37,14 @@ variable "mytuple" {
   "cat", 1, "dog"]
 
 }
+
+variable "myobject" {
+  type = object({
+    name = string,
+    port = list(number)
+  })
+  default = {
+    name = "BJ"
+    port = [22, 80, 8080]
+  }
+}
