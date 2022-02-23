@@ -5,11 +5,11 @@ provider "aws" {
 }
 
 resource "aws_vpc" "vpc1" {
-  
+
   cidr_block = "192.168.0.0/24"
   tags = {
     "author" = "babak"
-    "Name" = var.intputname
+    "Name"   = var.intputname
   }
 
 }
@@ -17,3 +17,4 @@ resource "aws_vpc" "vpc1" {
 output "vpcId" {
   value = aws_vpc.vpc1.id
 }
+

@@ -1,10 +1,10 @@
 variable "vpcname" {
-  type = string
-  default  = "myvpc"
+  type    = string
+  default = "myvpc"
 }
 
 variable "sshport" {
-  type = number
+  type    = number
   default = 22
 }
 
@@ -13,12 +13,12 @@ variable "enabled" {
 }
 
 variable "mylist" {
-  type = list(string)
-  default = ["value1","value2"]
+  type    = list(string)
+  default = ["value1", "value2"]
 }
 
 variable "mymap" {
-  type = map 
+  type = map(any)
   default = {
     Key1 = "Value1"
     Key2 = "Value2"
@@ -26,6 +26,14 @@ variable "mymap" {
 }
 
 variable "intputname" {
-  type = string
+  type        = string
   description = "set the name of the VPC"
+}
+
+variable "mytuple" {
+
+  type = tuple([string, number, string])
+  default = [
+  "cat", 1, "dog"]
+
 }
