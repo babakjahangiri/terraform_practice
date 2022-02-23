@@ -5,11 +5,11 @@ provider "aws" {
 }
 
 resource "aws_vpc" "vpc1" {
-   name = var.vpcname
+  
   cidr_block = "192.168.0.0/24"
   tags = {
     "author" = "babak"
-    "name" = "TerraformVPC"
+    "Name" = var.intputname
   }
 
 }
